@@ -1,0 +1,22 @@
+*termbufm.txt* toggle terminal window and compile/run code
+*termbufm*
+
+==============================================================================
+INTRODUCTION                                                             *lterm*
+
+*termbufm.txt* TERMinal BUFfer Manager: toggle terminal window and compile/run code
+
+https://github.com/mizlan/vim-lterm
+
+==============================================================================
+CONFIGURATION                                              *lterm-configuration*
+
+  *g:termbufm_direction_cmd*
+    Command to open terminal window on open (either `vnew` or `new`)
+
+  *g:termbufm_code_scripts*
+    Dictionary mapping `filetype` to a dictionary with `build` and `run` (or
+    `test`) commands
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl:
