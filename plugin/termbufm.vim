@@ -125,9 +125,9 @@ function! TermBufMExecCodeScript(ft, type) abort
 
       " simulate argument unpacking using loop over List and execute()
       let cmd = execute('echo printf(''' . fmtstr . ''', ' . argstr .')')
-      let b:termbufm_cached_cmd = cmd
+      let b:termbufm_cached_cmd[a:type] = cmd
     endif
 
-    call TermBufMExec(b:termbufm_cached_cmd)
+    call TermBufMExec(b:termbufm_cached_cmd[a:type])
 
 endfunction
