@@ -129,7 +129,7 @@ function! TermBufMExecCodeScript(ft, type) abort
       endfor
 
       " simulate argument unpacking using loop over List and execute()
-      let cmd = execute('echo printf(''' . fmtstr . ''', ' . argstr .')')
+      let cmd = trim(execute('echo printf(''' . fmtstr . ''', ' . argstr .')'))
       let b:termbufm_cached_cmd[a:type] = cmd
     endif
 
