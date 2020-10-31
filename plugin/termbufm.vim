@@ -115,7 +115,12 @@ function! TermBufMExecCodeScript(ft, type) abort
 
     " if have not cached the cmd type yet, generate it from global dictionary
     if !has_key(b:termbufm_cached_cmd, a:type)
-      let [fmtstr; fargs] = get(ft_dict, a:type)
+      let entry = get(ft_dict, a:type)
+      if len(entry) == 0
+        return
+      endif
+
+      let [fmtstr; fargs] = entry
 
       let argstr = ''
       let begin = 1
