@@ -3,6 +3,12 @@
 
 A wrapper around the Neovim terminal window, with functionality for toggling and auto-compiling and running code.
 
+A simple install using a plugin manager, in this case [vim-plug](https://github.com/junegunn/vim-plug):
+
+```vim
+Plug 'mizlan/termbufm'
+```
+
 ## Follow these steps to configure:
 
 ### Set preferred direction:
