@@ -93,8 +93,6 @@ if !exists('g:termbufm_code_scripts')
         \ }
 endif
 
-
-
 function! TermBufMExecCodeScript(ft, type) abort
     if !has_key(g:termbufm_code_scripts, a:ft)
         throw printf('filetype not found: %s', a:ft)

@@ -40,6 +40,15 @@ command! TBuild call TermBufMExecCodeScript(&filetype, 'build')
 command! TRun call TermBufMExecCodeScript(&filetype, 'run')
 ```
 
+### Create keybinds:
+```vim
+nnoremap <silent> <leader>b :TBuild<CR>
+nnoremap <silent> <leader>b :TRun<CR>
+
+" toggle the window (show/hide)
+nnoremap <silent> <leader><space> :call TermBufMToggle()<CR>
+```
+
 ### Load auxiliary keymap:
 
 ```vim
