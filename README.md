@@ -43,7 +43,7 @@ command! TRun call TermBufMExecCodeScript(&filetype, 'run')
 ### Create keybinds:
 ```vim
 nnoremap <silent> <leader>b :TBuild<CR>
-nnoremap <silent> <leader>b :TRun<CR>
+nnoremap <silent> <leader>r :TRun<CR>
 
 " toggle the window (show/hide)
 nnoremap <silent> <leader><space> :call TermBufMToggle()<CR>
