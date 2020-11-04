@@ -87,7 +87,7 @@ endfunction
 if !exists('g:termbufm_code_scripts')
   let g:termbufm_code_scripts = {
         \ 'python': { 'build': [''],                       'run': ['python %s', '%'] },
-        \ 'cpp':    { 'build': ['g++ %s', '%'], 'run': ['./a.out'] },
+        \ 'cpp':    { 'build': ['g++ %s', '%'],            'run': ['./a.out'] },
         \ 'java':   { 'build': ['javac %s', '%'],          'run': ['java %s', '%:r'] },
         \ 'c':      { 'build': ['gcc %s', '%'],            'run': ['./a.out'] },
         \ }
