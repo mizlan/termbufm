@@ -1,4 +1,4 @@
-  <h1 align="center">📋 termbufm</h1>
+<h1 align="center">📋 termbufm</h1>
 <p align="center">A lightweight terminal buffer manager for Neovim.</p>
 
 A wrapper around the Neovim terminal window, with functionality for toggling and auto-compiling and running code.

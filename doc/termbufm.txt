@@ -6,7 +6,7 @@ INTRODUCTION                                                             *lterm*
 
 *termbufm.txt* TERMinal BUFfer Manager: toggle terminal window and compile/run code
 
-https://github.com/mizlan/vim-lterm
+https://github.com/mizlan/termbufm
 
 ==============================================================================
 CONFIGURATION                                              *lterm-configuration*
