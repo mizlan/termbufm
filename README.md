@@ -6,7 +6,7 @@ A wrapper around the Neovim terminal window, with functionality for toggling and
 A simple install using a plugin manager, in this case [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```vim
-Plug 'mizlan/termbufm'
+Plug 'mizlan/termbufm', {'branch': 'main'}
 ```
 
 ## Follow these steps to configure:
