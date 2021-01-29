@@ -65,13 +65,13 @@ elements will be expanded through `expand()` (read `:h expand()`) and passed in
 as arguments, along with the format string, to `printf()`.
 
 For your convenience, some common options for the `expand()` command are here:
-| Type | Value |
-| :--- | :--- |
-| filename | `test.cpp` |
-| `%` | `test.cpp` |
-| `%:r` | `test` |
-| `%:e` | `cpp` |
-| `%:p` | `/home/ml/code/test.cpp` |
+| Type     | Value                    | Meaning   |
+| :---     | :---                     | :---      |
+| `%`      | `test.cpp`               | filename  |
+| `%:r`    | `test`                   | basename  |
+| `%:e`    | `cpp`                    | extension |
+| `%:p:h`  | `/home/ml/code`          | directory |
+| `%:p`    | `/home/ml/code/test.cpp` | full path |
 
 For example, for `cpp` filetypes, `'g++ -std=c++11 %s'` is the format string, and `'%'` means the filename.
 
