@@ -10,6 +10,14 @@ function! TermBufMDirection()
     endif
 endfunction
 
+function! TermBufMShell()
+    if !exists('g:termbufm_shell')
+        return $SHELL
+    else
+        return g:termbufm_shell
+    endif
+endfunction
+
 function! TermBufMOpen(...)
 
     let direction = 'new'
@@ -26,7 +34,7 @@ function! TermBufMOpen(...)
         exec direction
 
         " set the job id
-        let s:termbufm_job_id = termopen($SHELL)
+        let s:termbufm_job_id = termopen(TermBufMShell())
 
         " change name of buffer
         silent file termbufm_b
