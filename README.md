@@ -11,6 +11,12 @@ Plug 'mizlan/termbufm', {'branch': 'main'}
 
 ## Follow these steps to configure:
 
+### Set preferred shell:
+
+```vim
+let g:termbufm_shell = '/bin/dash'
+```
+
 ### Set preferred direction:
 
 ```vim
@@ -48,6 +54,13 @@ nnoremap <silent> <leader>r :TRun<CR>
 " toggle the window (show/hide)
 nnoremap <silent> <leader><space> :call TermBufMToggle()<CR>
 ```
+
+You can also replace the first two mappings above with 
+```vim
+:TBuild<CR><C-W><C-W>
+:TRun<CR><C-W><C-W>i
+```
+to automatically switch to the terminal buffer and start "insert" when you run (in case there are user inputs).
 
 ### Load auxiliary keymap:
 
